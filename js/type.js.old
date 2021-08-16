@@ -1,0 +1,44 @@
+window.addEventListener("load", function() {
+  window.type = {
+    el: document.getElementById("wrap"),
+    text: [
+      "Банковские карты с балансом",
+      "Дома по 30000 рублей",
+      "PlayStation 5 за 10000 рублей",
+      "Discord Nitro за 50 рублей",
+      "Любая игра за 30 рублей",
+      "Ты можешь купить всё что угодно",
+      "Тебя совершенно никто не наебёт"
+    ],
+    period: 200,
+
+    id: 0,
+    txt: "",
+    deleting: false,
+    tick: function() {
+	console.log(this);
+      var t = this;
+      var
+        full = t.text[t.id % t.text.length],
+        dt   = t.period - Math.random() * 100;
+      if(t.deleting) dt /= 2;
+
+      t.txt = full.substring(0, t.text.length + (t.deleting ? -1 : 1));
+      t.el.innerHTML = t.txt;
+
+      if(!t.deleting && t.txt == full) {
+        t.deleting = true;
+        dt = t.period;
+      } else if(t.deleting && t.txt == "") {
+        t.deleting = false;
+        if(++t.id >= t.text.length) t.id = 0;
+        dt = 500;
+      }
+
+      return setTimeout(() => t.tick(), dt);
+    }
+  };
+
+  window.type.tick();
+  console.log("%cЕсли вы открыли консоль, значит вас на 10000% хотят наебать", "background: red; color: blue; font-size: 64px;");
+});
