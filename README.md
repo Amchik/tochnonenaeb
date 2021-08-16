@@ -1,11 +1,20 @@
-# What is this site?
+* What is this site?
 
-This site is only a joke, you can send it to anyone for example if they ask: "How do I get Discord Nitro for free?", that's the point of the site.
+This is a joke site,
+you can send it if anyone asks something like
+*How I can get Discord Nitro for free*.
 
-# History 
+* History
 
-I saw how on one Discord server, people sent a link tochnonenaeb.xyz in response to similar questions (written above), as it turned out such a site does not exist, and the domain was not occupied, then I bought the domain and created a site. 
+I hqsq
+saw how someone sent link tochnonenaeb.xyz in answer to question written above.
+Domain is doesn't exist so I bought this and made a site.
 
-# May I suggest an idea for a website?
+* Can I contribute?
 
-Yes, you can suggest some idea for the site and maybe I will implement it.
+Yes, *you can* contribute, send pull requests, issues and ideas.
+
+* New version of the site (2.0)
+
+Thank you \Er2ch\ for the second version of the site, you can access it at https://tochnonenaeb.xyz/new later it may become the main version of the site.
+
