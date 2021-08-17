@@ -7,14 +7,19 @@ you can send it if anyone asks something like
 * History
 
 I hqsq
-saw how someone sent link tochnonenaeb.xyz in answer to question written above.
+Saw how someone sent link tochnonenaeb.xyz in answer to question written above.
 Domain is doesn't exist so I bought this and made a site.
 
 * Can I contribute?
 
 Yes, *you can* contribute, send pull requests, issues and ideas.
 
-* New version of the site (2.0)
+* Classic version (1.0)
 
-Thank you \Er2ch\ for the second version of the site, you can access it at https://tochnonenaeb.xyz/new later it may become the main version of the site.
+The original version of the site, created by HQSQ itself.
+
+* Google edition (2.0)
+
+This version of the site from Er2ch, it's called the Google edition because the home page is very similar to Google.
+
 
