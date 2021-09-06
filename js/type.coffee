@@ -10,7 +10,7 @@ class Type
     dt /= 2 if @deleting
 
     @txt = full.substring 0, @txt.length + (if @deleting then -1 else 1)
-    @el.innerHTML = @txt
+    @el.placeholder = @txt
 
     if not @deleting and @txt is full
       @deleting = yes
