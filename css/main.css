@@ -17,6 +17,13 @@ svg {
   padding-left:    15px;
   text-decoration: none;
 }
+.IThX2A, .IThX2A:focus-visible {
+  font-size: 1.2em;
+  border: none;
+  outline: none;
+  width: 100%;
+  background-color: transparent;
+}
 .search {
   max-width: 584px;
   height:    48px;
@@ -27,6 +34,43 @@ svg {
 .navigate, .search {
   display: flex;
   margin:  0 auto;
+}
+.search {
+  flex-direction: column;
+}
+.GAMpgQ {
+  display: flex;
+}
+.xYTgOw {
+  align-self: flex-end;
+  margin-top: 0;
+  padding-right: 5px;
+  color: rgba(0, 0, 0, 0.3);
+}
+.u1Tipw {
+  border-radius: 6px;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 4px;
+}
+.ed7dUw {
+  color: rgba(0, 0, 0, 0.6);
+}
+button {
+  border: none;
+  border-radius: 4px;
+  outline: none;
+  font-size: 1em;
+  padding: 7px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  color:white;
+}
+kbd {
+  display: inline-block;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  border-radius: 4px;
+  padding: 2px;
 }
 .navigate, .logo {
   padding: 6px;
@@ -39,4 +83,12 @@ svg {
   margin-right: 1px;
   max-width:  32px;
   max-height: 32px;
-
+}
+@keyframes vU5LRA {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
