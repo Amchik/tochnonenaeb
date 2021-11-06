@@ -23,3 +23,4 @@ The original version of the site, created by HQSQ itself.
 This version of the site from Er2ch, it's called the Google edition because the home page is very similar to Google.
 
 
+* Site is currently disabled.
