@@ -1,3 +1,5 @@
+* Site is disabled for forever.
+
 * What is this site?
 
 This is a joke site,
@@ -21,6 +23,3 @@ The original version of the site, created by HQSQ itself.
 * Google edition (2.0)
 
 This version of the site from Er2ch, it's called the Google edition because the home page is very similar to Google.
-
-
-* Site is currently disabled.
