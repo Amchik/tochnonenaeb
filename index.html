@@ -14,9 +14,9 @@
   <meta name="theme-color" content="#000000">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <!-- js -->
+  <script src="js/drm.js"></script>
   <script src="js/type.js"></script>
   <script src="js/theme.js"></script>
-  <script src="js/search.js"></script>
   <!-- css -->
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/hover.css">
@@ -26,45 +26,17 @@
 <body>
   <div style='display: flex; align-content: space-around;'>
     <div class='navigate'>
-      <a href='buy' class='button'>Купить</a>
+      <a href='buy'        class='button'>Купить</a >
       <!--                                   и    -->
       <a href='kak_naebat' class='button'>Наебать</a>
-      <a href='discord' class='button'>Discord</a>
+      <a href='discord'    class='button'>Discord</a>
     </div>
-    <div id='theme' class='button' onclick='swTheme();'><svg focusable="false" xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 32 32">
-        <path
-          d='M17.7007 32c4.9351 0 9.4424-2.2453 12.4286-5.9245c.4417-.5443-.0399-1.3394-.7226-1.2094C21.6439 26.3445 14.5152 20.3926 14.5152 12.5565c0-4.5139 2.4164-8.6647 6.3436-10.8996C21.4642 1.3124 21.312.3946 20.6241.2675A16.1348 16.1348 90 0017.7007 0c-8.8318 0-16 7.1569-16 16c0 8.8318 7.1569 16 16 16z' />
-      </svg></div>
+    <div id='theme' class='button' onclick='swTheme();'><svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d='M17.7007 32c4.9351 0 9.4424-2.2453 12.4286-5.9245c.4417-.5443-.0399-1.3394-.7226-1.2094C21.6439 26.3445 14.5152 20.3926 14.5152 12.5565c0-4.5139 2.4164-8.6647 6.3436-10.8996C21.4642 1.3124 21.312.3946 20.6241.2675A16.1348 16.1348 90 0017.7007 0c-8.8318 0-16 7.1569-16 16c0 8.8318 7.1569 16 16 16z' /></svg></div>
   </div>
 
-  <div class='logo'>
-    <center>СОВЕРШЕННО ТОЧНО НЕ НАЁБ</center>
-  </div>
+  <div class='logo'><center>СОВЕРШЕННО ТОЧНО НЕ НАЁБ</center></div>
   <div class='search'>
-    <div class='GAMpgQ'>
-      <p class='q' style='width: 20px; height: 20px;'>
-        <svg id="fnn" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-          <path
-            d='M14.43 13.73A6.471 6.471 0 0016 9.5A6.5 6.5 0 109.5 16c1.61 0 3.09-.59 4.23-1.57L14 15.5l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5S14 7.01 14 9.5S11.99 14 9.5 14z'>
-          </path>
-        </svg>
-      </p>
-      <input type="text" id="wrap" class="q IThX2A">
-    </div>
-    <p class="xYTgOw">
-      Нажми <kbd>Enter</kbd> чтобы искать
-    </p>
-    <div style="visibility:hidden" id="fn">
-      <h2>Найдено 1 предложение:</h2>
-      <div class="u1Tipw">
-        <h3 id="fnd">${this.context.client.token}</h3>
-        <span class="ed7dUw">Цена не указана</span>
-        <div>
-          <button style="background-color: #4CAF50;" onclick="buySelected()">Связаться с продавцом</button>
-          <button style="background-color: #f44336;" onclick="reportSelected()">Пожаловаться</button>
-        </div>
-      </div>
-    </div>
+    <p class='q' style='width: 20px; height: 20px;'><svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d='M14.43 13.73A6.471 6.471 0 0016 9.5A6.5 6.5 0 109.5 16c1.61 0 3.09-.59 4.23-1.57L14 15.5l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5S14 7.01 14 9.5S11.99 14 9.5 14z'></path></svg></p>
+    <p class='q' id='wrap'></p>
   </div>
 </body>

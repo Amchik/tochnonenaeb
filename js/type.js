@@ -19,7 +19,7 @@ Type = class Type {
       dt /= 2;
     }
     this.txt = full.substring(0, this.txt.length + (this.deleting ? -1 : 1));
-    this.el.placeholder = this.txt;
+    this.el.innerHTML = this.txt;
     if (!this.deleting && this.txt === full) {
       this.deleting = true;
       dt = this.period;
@@ -37,7 +37,7 @@ Type = class Type {
 
 };
 
-window.addEventListener('load', function () {
+window.addEventListener('load', function() {
   window.type = new Type(document.getElementById('wrap'), ['Банковские карты с балансом', 'Дома по 30000 рублей', 'PlayStation 5 за 10000 рублей', 'Discord Nitro за 50 рублей', 'Любая игра за 30 рублей', 'Ты можешь купить всё что угодно', 'Тебя совершенно точно никто не наебёт']);
   window.type.tick();
   console.log('%cЕсли вы открыли консоль, значит вас на 10000% хотят наебать', 'background: red; color: blue; font-size: 64px;');
