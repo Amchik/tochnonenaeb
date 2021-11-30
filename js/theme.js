@@ -1,8 +1,6 @@
 var theme = "white";
 
 function setTheme() {
-  // DarkReader
-  if(document.querySelector('.darkreader--fallback')) theme = "dark";
   document.documentElement.className = theme;
 }
 
@@ -11,4 +9,9 @@ function swTheme() {
   setTheme();
 }
 
-window.addEventListener("load", setTheme);
+window.addEventListener("load", function() {
+  // DarkReader
+  if(document.querySelector('.darkreader--fallback')) theme = "dark";
+  setTheme();
+});
+
