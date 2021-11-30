@@ -1,6 +1,8 @@
 var theme = "white";
 
 function setTheme() {
+  // DarkReader
+  if(document.querySelector('.darkreader--fallback')) theme = "dark";
   document.documentElement.className = theme;
 }
 
