@@ -8,10 +8,16 @@ html {
   background:  var(--bckg-color);
   color:       var(--butt-color);
 }
+button {
+  background-color: var(--bckg-color);
+  border-radius: 8px;
+  border-style: solid;
+  vertical-align: unset !important;
+}
 .thm {
   filter: var(--iimg-filtr);
 }
-.button, .q {
+.button, .q, button {
   vertical-align:  middle;
   color:           var(--butt-color);
   display:         inline-block;

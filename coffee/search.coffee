@@ -1,4 +1,4 @@
-search = ->
+search = (val) ->
   el  = document.querySelector '.center'
   res = document.querySelector '.results'
 
