@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru" />
+
+<head>
+  <!-- embed -->
+  <title>TochnoNeNaeb</title>
+  <meta name="description" content="Здесь вас не наебут">
+  <meta name="author" content="Сообщество на GitHub">
+  <meta name="theme-color" content="#000000">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="darkreader" content="addSomethingHere">
+  <!-- js -->
+  <script src="/js/drm.js"></script>
+  <script src="/js/type.js"></script>
+  <script src="/js/theme.js"></script>
+  <script src="/js/search.js"></script>
+  <!-- css -->
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/hover.css">
+  <link rel="stylesheet" href="/css/themes.css">
+  <link rel="stylesheet" href="/css/adaptive.css">
+</head>
+
+<body>
+  <div class='nav'>
+    <a href='/buy'        class='button'>Купить</a >
+    <!--                                    и    -->
+    <a href='/kak_naebat' class='button'>Наебать</a>
+    <a href='/discord'    class='button'>Discord</a>
+
+    <a class='button thm' href='old'><img src='img/old.png' /></a>
+    <a class='button' id='gh' href='https://github.com/hqsq/tochnonenaeb'><img src='/img/gh.png' /></a>
+    <a class='button thm' id='theme'><img onclick='swTheme();' src='/img/dark.png' /></a>
+  </div>
+  <img class='logo thm' src='/img/biglogo.png' />
+
+  <div class='center'>
+    <div class='search' style='flex: 0 1 100%'>
+      <img class='q thm' src='/img/search.png' />
+      <input class='q' id='wrap' oninput='search(this.value);' />
+    </div>
+
+    <div class='results' style='display:none; width: 100%; flex: 1 1 100%;'>
+      <div class='div'></div>
+      <p id='res'></p>
+    </div>
+  </div>
+</body>
+<!-- (c) Er2, hqsq 2021 -->

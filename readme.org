@@ -14,10 +14,18 @@ Domain is doesn't exist so I bought this and made a site.
 
 Yes, *you can* contribute, send pull requests, issues and ideas.
 
+* How to build?
+
+To build you need ~nodejs (even 12.x)~, ~npm~ and ~make~.
+  - ~sudo npm i -g coffeescript buble minify@6.0.1~.
+  - ~make~. If you have ~php~ installed, you can use ~make deploy~
+
 * Classic version (1.0)
 
 The original version of the site, created by HQSQ itself.
+Located in ~old/~ directory.
 
 * Google edition (2.0)
 
 This version of the site from Er2ch, it's called the Google edition because the home page is very similar to Google.
+

@@ -2,12 +2,18 @@
  * (c) Er2 2021
  */
 
-.search:hover {
-  border: none;
-  box-shadow: 0 1px 6px var(--srch-shadw);
-}
-.button:hover, #theme svg:hover {
+.button:hover {
   text-decoration: underline;
-  fill: blue;
+}
+
+#gh:hover {
+  filter: brightness(50%);
+}
+#theme:hover {
+  filter: invert(50%);
+}
+
+.center:hover, .shadow {
+  box-shadow: 0 1px 6px var(--srch-shadw);
 }
 

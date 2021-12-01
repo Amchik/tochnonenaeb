@@ -8,35 +8,64 @@ html {
   background:  var(--bckg-color);
   color:       var(--butt-color);
 }
-svg {
-  fill: var(--butt-color);
+.thm {
+  filter: var(--iimg-filtr);
 }
 .button, .q {
+  vertical-align:  middle;
   color:           var(--butt-color);
   display:         inline-block;
-  padding-left:    15px;
+  margin-left:     15px;
   text-decoration: none;
 }
-.search {
-  max-width: 584px;
-  height:    48px;
-  border:    1px solid var(--srch-color);
+.center {
+  border:        1px solid var(--srch-color);
   border-radius: 24px;
+
+  max-width:     584px;
+}
+.div {
+  border-top: 1px solid var(--srch-color);
+  margin: 0 20px 4px 20px;
+}
+img.q {
+  max-width:  20px;
+  max-height: 20px;
 }
 
-.navigate, .search {
-  display: flex;
-  margin:  0 auto;
+/* margins */
+.q {
+  margin-top: 2%;
 }
-.navigate, .logo {
-  padding: 6px;
+#wrap {
+  width: 80%;
+  padding-right: 15px;
+  background-color: transparent;
+  border: none;
+}
+.search {
+  width: 100%;
+  height: 48px;
+}
+.center, .logo {
+  margin: 0 auto;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+.nav {
+  background: var(--bckg-color);
+  padding:    6px;
+  height:     32px;
+  margin:     0 0 0 auto;
+  display:    table;
 }
 .logo {
-  padding-top:    180px;
+  max-height:     92px;
+  padding-top:    100px;
   padding-bottom: 32px;
 }
-#theme {
-  margin-right: 1px;
+.button img {
   max-width:  32px;
   max-height: 32px;
-
+}

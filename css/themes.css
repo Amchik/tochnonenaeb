@@ -7,11 +7,13 @@
   --butt-color: #ffffff;
   --srch-color: #ffffff;
   --srch-shadw: #ffffff;
+  --iimg-filtr: invert(100%);
 }
 .white {
   --bckg-color: #ffffff;
   --butt-color: #000000;
-  --srch-color: #000000;
+  --srch-color: #dfe1e5;
   --srch-shadw: rgba(32, 32, 32, .28);
+  --iimg-filtr: none;
 }
 
