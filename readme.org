@@ -18,7 +18,7 @@ Yes, *you can* contribute, send pull requests, issues and ideas.
 
 To build you need ~nodejs (even 12.x)~, ~npm~ and ~make~.
   - ~sudo npm i -g coffeescript buble minify@6.0.1~.
-  - ~make~. If you have ~php~ installed, you can use ~make deploy~
+  - ~make~. If you want deploy to server, use ~sudo make deploy~
 
 * Classic version (1.0)
 

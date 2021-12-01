@@ -2,6 +2,10 @@
 ## (c) Er2, hqsq 2021-2022
 ## MIT License
 
+# CONSTANTS
+SERVROOT ?= /var/www/html
+FILES += js/ css/ img/ old/ CNAME LICENSE *.html
+
 # FILES
 CSRC= $(wildcard coffee/*.coffee)
 HSRC= $(wildcard *.src.html)
@@ -20,9 +24,17 @@ check:
 	@echo "Buble... yes"
 	@minify -v
 	@echo "Minify.. yes"
+	@echo "Nginx..."
+	-@nginx -v
 
 deploy: build
-	php -S 127.0.0.1:8080
+	mkdir -p $(SERVROOT)
+	cp -r $(FILES) $(SERVROOT)
+	find $(SERVROOT) -name '*.src.html' -exec rm {} \;
+	chmod 755 -R $(SERVROOT)
+
+undeploy:
+	cd $(SERVROOT) && rm -rf $(FILES)
 
 clean:
 	@$(RM) $(HEPS) $(JEPS)
